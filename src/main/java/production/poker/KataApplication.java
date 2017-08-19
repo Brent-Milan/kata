@@ -1,4 +1,4 @@
-package production.kata;
+package production.poker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
