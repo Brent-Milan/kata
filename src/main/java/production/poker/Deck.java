@@ -10,16 +10,23 @@ public class Deck {
 	Random r = new Random();
 	
 	public Deck() {
-//		int index1;
-//		int index2;
+		int index;
+		int index2;
 		Card card;
 		
-		for(int index = 0; index < 4; index++) {
-			for(int index2 = 0; index < 12; index++) {
+		for(index = 0; index < 4; index++) {
+			for(index2 = 0; index < 12; index++) {
 				cards.add(new Card(index, index2));
 			}
 		}
-	}
 	
+	
+		int randomSuit = 1 + r.nextInt(3);
+		int randomRank = 1 + r.nextInt(11);
+		
+		for(int i = 0; i < cards.size(); i++) {
+			cards.set(i, new Card(randomSuit, randomRank));
+		}
+	}
 	
 }
