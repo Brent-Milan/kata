@@ -19,10 +19,26 @@ public class Card {
 	}
 	
 	@Override
-	public String toString( ) {
+	public String toString() {
 		return ranks[rank] + " of " + suits[suit];
 	}
 	
+	/*****************************
+	 * Getter Methods
+	 ****************************/
+	
+	public int getRank() {
+		return rank;
+	}
+
+	public int getSuit() {
+		return suit;
+	}
+	
+	/*******************************
+	 * MISC
+	 ******************************/
+
 	public static String rankAsString(int rank) {
 		return ranks[rank];
 	}
