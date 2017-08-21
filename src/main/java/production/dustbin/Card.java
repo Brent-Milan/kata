@@ -1,4 +1,4 @@
-package production.poker;
+package production.dustbin;
 
 public class Card {
 
