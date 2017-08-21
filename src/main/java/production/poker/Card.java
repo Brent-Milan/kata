@@ -1,5 +1,6 @@
 package production.poker;
 
+
 public class Card {
 
 	private String[] suits = { "Hearts", "Diamonds", "Clubs", "Spades"};
@@ -15,6 +16,8 @@ public class Card {
 		this.suit = suit;
 	}
 	
+	
+	//getters
 	public String getSuit() {
 		return suit;
 	}
@@ -22,4 +25,8 @@ public class Card {
 	public String getRank() {
 		return rank;
 	}
+	
+	
+	
+	
 }
